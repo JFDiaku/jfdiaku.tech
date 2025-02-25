@@ -1,0 +1,489 @@
+#projects{
+  padding-top: 200px;
+  z-index: 20;
+  margin-bottom: 40vh;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background-color:  var(--bg);
+}
+
+.maintenance{
+  font-size: 12px;
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  width: 40px;
+  bottom: 5rem;
+  align-items: center;
+  img{
+    height: 50px;
+  }
+
+}
+
+
+.projects{
+  max-width: 1500px;
+  padding: 0 150px 0 150px;
+  margin: auto;
+  .title{
+    font-size: 1em ;
+    font-weight: 600;
+    color: var(--base);
+    text-align: start;
+  }
+}
+
+.underline{
+  width: 100%;
+  height: .5px;
+  background-color: gray;
+ margin-top: 2rem;
+}
+
+.tools{
+  display: flex;
+  position: absolute;
+  max-width: 40%;
+flex-wrap: wrap;
+text-wrap: wrap;
+line-height: .5em;
+  p{
+    font-size: .8em;
+    font-weight: 600;
+    color: rgb(33, 33, 33);
+  }
+}
+
+
+#goplay2 .tools{
+  bottom: 6rem;
+}
+
+#secfi .tools{
+  right: 50px;
+  bottom: 10rem;
+}
+
+
+#wine .tools{
+  bottom: 13rem;
+}
+
+#arg .tools{
+  bottom: 30%;
+  right: 50px;
+}
+
+#goplay .tools{
+  bottom: 30%;
+}
+
+
+
+.project{
+  display: flex;
+  gap: 3rem;
+  padding: 5rem 3rem 3rem 3rem;
+  border-bottom: .5px lightgray solid;
+  max-height: 30rem;
+  height: fit-content;
+  position: relative;
+  max-width: 62rem;
+  margin: auto;
+
+  .project-card{
+    max-width: 60%;
+    min-width: 55%;
+    min-height: 17rem;
+    border-radius: 5px;
+    box-sizing: border-box;
+  position: relative;
+
+    img{
+      width: 100%;
+      height: 100%;
+      pointer-events: all;
+   position: relative;
+   border: 1px rgb(154, 154, 154) solid;
+   border-radius: 3px ;
+    }
+    .overlay{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(234, 234, 234, 0.252);
+      top: 0;
+      left: 0;
+      transition: all .3s ease-in-out;
+      border-radius: 3px ;
+    }
+  
+    .overlay:hover{
+      background:none;
+
+    }
+
+    .overlay:hover .card-img{
+      border: 1px lightgrey solid;
+    }
+   
+  }
+
+
+   
+   
+
+  
+  .project-description{
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  .tool-icon{
+    height: 35px;
+    width: 35px;
+   }
+ 
+   .tools{
+     display: flex;
+     align-items: center;
+     gap: 1rem;
+   }
+   .proj-title{
+    font-size: 1.5em;
+    line-height: 1em;
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    font-family: var(--font2);
+
+  }
+  .proj-date{
+    font-size: .7em;
+    font-weight: 600;
+  }
+
+}
+
+
+
+
+
+
+
+
+.project-icons{
+display: flex;
+justify-content: end;
+position: absolute;
+bottom: 3rem;
+right: 3rem;
+}
+
+.proj-descrip{
+  margin-top: 1rem;
+  background: var(--base);
+  padding: 1.5rem;
+  color: white;
+  position: absolute;
+  right: 3rem;
+  width: 28rem;
+  font-size: .9em;
+  border-radius: 2px;
+}
+
+.project-right{
+  flex-direction: row-reverse;
+  text-align: start;
+  .proj-descrip{
+    left: 3rem;
+  }
+  .project-icons{
+    justify-content: flex-start;
+  }
+  .project-icons{
+    left: 3rem;
+  }
+  .tools{
+
+    justify-content: start;
+
+  }
+}
+
+
+@media screen and (max-width: 1200px){
+  #wine .tools{
+    bottom: 9rem;
+  }
+}
+.project-left{
+  text-align: end;
+  .tools{
+
+  }
+}
+
+.oil-project{
+  .tools{
+
+  }
+}
+
+.goplay{
+  .tools{
+  
+  }
+}
+
+.circleContainer{
+
+        position: relative;
+        margin-top: 100px;
+    
+
+ 
+        .circle{
+
+            height: 1550%;
+
+            width: 120%;
+
+            left: -10%;
+
+            border-radius: 0 0 50% 50%;
+
+            background-color:  var(--bg);
+            z-index: 20;
+       
+
+            position: absolute;
+
+
+        }
+
+    }
+
+
+@media screen and (max-width: 1100px){
+  #projects{
+    margin-bottom: 20vh ;
+  }
+  
+  .projects{
+    padding: 0 80px;
+    .project{
+      padding: 3rem 2rem 3rem 2rem;
+    }
+  }
+
+  .project-right{
+    .proj-descrip{
+      left: 2rem;
+    }
+  }
+  .project-left{
+    .proj-descrip{
+      right: 2rem;
+    }
+  }
+
+  #secfi .tools{
+    bottom: 8rem;
+  }
+
+  #goplay .tools{
+    bottom: 9rem;
+  }
+ 
+
+  
+}
+
+
+@media screen and (max-width: 950px){
+
+}
+
+@media screen and (max-width: 800px){
+
+
+  .projects{
+    padding: 0 60px;
+    width: 100%;
+    .project{
+      padding: 3rem 2rem 3rem 2rem;
+      width: 100%;
+      height: 22rem;
+      margin-top: 5rem ;
+      justify-content: start;
+      text-align: start;
+      align-items: start;
+      .project-card{
+        max-width: none;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        min-height: 22rem;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        z-index: -1;
+        border: lightgray 2px solid;
+      }
+      .overlay{
+        background: rgba(251, 250, 250, 0.578);
+      }
+      
+      
+    }
+    .tools{
+      position: static;
+      justify-content: flex-start;
+      margin-top: 1em;
+      margin-top: 1rem;
+      gap: .5rem;
+      max-width: none;
+      p{
+        font-weight: 600;
+      }
+    }
+
+    .project-left, .project-right{
+      flex-direction: row;
+      text-align: start;
+      .project-icons{
+        justify-content: flex-start;
+        bottom: 2rem;
+        left: 2rem ;
+      }
+      .project-icons{
+        margin-top: 1em;
+      }
+    }
+
+    
+
+  }
+
+ .proj-descrip{
+  position: static;
+  width: 100%;
+  margin-top: .5em;
+ }
+
+ .maintenance{
+  bottom: 20%;
+ }
+
+
+  
+}
+
+@media screen and (max-width: 650px){
+  .projects{
+    padding: 0 30px;
+    width: 100%;
+    .title{
+      margin-left: 0;
+    }
+    .project{
+      padding: 2rem 1rem 1rem 1rem;
+      height: 20rem;
+      .proj-title{
+        font-size: 1.2em;
+      }
+      .project-card{
+        min-height: 20rem;
+      }
+      
+      
+    }
+    .tools{
+      
+    }
+
+    .project-left, .project-right{
+  
+      .project-icons{
+        justify-content: flex-start;
+        bottom: 1rem;
+        left: 1rem ;
+      }
+    }
+
+    
+
+  }
+
+ .proj-descrip{
+  position: static;
+  width: 100%;
+  padding: 1rem;
+  font-size: .8em;
+ }
+  .circleContainer{
+    .circle{
+      height: 1000%;
+    }
+  }
+
+
+  
+}
+
+
+@media screen and (max-width: 490px){
+  
+  #projects{
+    padding-top: 150px;
+  }
+  .projects{
+    padding: 0 20px;
+    .project{
+      padding: 1rem;
+      height: 15rem;
+      margin-top: 3rem;
+      .project-card{
+        min-height: 15rem;
+      }
+      .tools{
+        font-size: .8em;
+      }
+      
+    }
+
+  }
+
+ .proj-descrip{
+  font-size: .7em;
+ }
+
+ .maintenance{
+  bottom: 5%;
+  right: 40%;
+ }
+
+}
+
+
+
+@media screen and (max-width: 350px){
+  .projects{
+    padding: 0 15px;
+    .project{
+      height: 15rem;
+      .project-card{
+        min-height: 15rem;
+      }
+      .tools{
+        font-size: .7em;
+      }
+      
+    }
+
+  }
+}
