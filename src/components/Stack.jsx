@@ -14,7 +14,7 @@ const Stack = () => {
   const StackInView = useInView(stack)
 
 
-  const myStack = ['HTML', 'CSS' , 'SASS', 'Tailwind CSS', ' JavaScript', 'PHP', 'SQL', 'Java',  'Spring Framework', 'Spring Boot', 'React.js', 'Redux', 'Node.js' ]
+  const myStack = ['HTML', 'CSS' , 'SCSS', 'Tailwind CSS', 'TypeScript' , ' JavaScript', 'SQL', 'Java',  'Spring Boot', 'React.js', 'Node.js' ]
 
   return (
     <div className='stack'   ref={stack}>

@@ -10,7 +10,7 @@ const Description = () => {
     const screenMD= useMediaQuery('(max-width:800px)')
 
     
-  const phrase = "Hello, I'm Jeff Diaku. I’m a software engineer specializing in building and designing engaging digital experiences.";
+  const phrase = "Hi, I'm Jeff Diaku, a software engineer specializing in web application development.";
   const description = useRef(null);
   const isInView = useInView(description, {once:true});
 
