@@ -1,5 +1,6 @@
 {
   "name": "jeff-diaku-portfolio",
+  "homepage": "https://JFDiaku.github.io/jfdiaku.tech/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,7 +8,8 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emotion/react": "^11.11.4",
@@ -15,6 +17,7 @@
     "@mui/icons-material": "^5.15.20",
     "@mui/material": "^5.15.20",
     "framer-motion": "^11.2.10",
+    "gh-pages": "^6.3.0",
     "gsap": "^3.12.5",
     "locomotive-scroll": "^5.0.0-beta.13",
     "react": "^18.2.0",
