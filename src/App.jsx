@@ -73,7 +73,7 @@ function App() {
    <Router>
        <Menu isActive={isActive} setIsActive={setIsActive} locomotiveScroll={locomotiveScroll} scrollToElement={scrollToElement}/>
        <Routes>
-          <Route path="JFdiaku.tech/" element={<Homepage homeref={homeref}  />}/>
+          <Route path="/" element={<Homepage homeref={homeref}  />}/>
      
        </Routes>
  
